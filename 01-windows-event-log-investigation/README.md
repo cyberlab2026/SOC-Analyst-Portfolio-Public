@@ -63,6 +63,15 @@ This screenshot records the logon type and additional logon-context fields.
 
 ![Sanitized Windows Event ID 4624 authentication details](event-4624-service-logon-2.png)
 
+### Evidence Limitation
+
+The original Event ID 4624 entry is no longer available in Event Viewer.
+
+The account name (`SYSTEM`) and process name (`C:\Windows\System32\services.exe`) were recorded during the initial review. However, these fields are not visible in the retained screenshots.
+
+They are documented as observations from the initial review and cannot be independently verified from the published screenshots.
+
+
 **Evidence file:** `event-4624-service-logon-2.png`
 
 This screenshot records the authentication package, logon process, key length, and related authentication details.
