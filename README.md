@@ -24,7 +24,7 @@ I am building skills in:
 | Project | What It Demonstrates | Status |
 |---|---|---|
 | [01 — Windows Event Log Investigation](./01-windows-event-log-investigation/README.md) | Reviewing Windows authentication events, identifying relevant fields, and documenting evidence-based findings | Completed |
-| [02 — Endpoint Security Policy Lab](./02-endpoint-security-policy-lab/README.md) | Reviewing Sophos endpoint settings and documenting EICAR detection and cleanup | Completed |
+| [02 — Endpoint Security Lab](./02-endpoint-security-lab/README.md) | Reviewing Sophos endpoint settings and documenting EICAR detection and cleanup | Completed |
 | [03 — Basic Network Triage](./03-network-triage-lab/README.md) | Checking network configuration, gateway reachability, DNS resolution, and TCP connectivity | Completed |
 | [04 — Linux Authentication Log Review](./04-linux-auth-log-review/README.md) | Reviewing Linux authentication failures and session activity while distinguishing evidence from assumptions | Completed |
 
