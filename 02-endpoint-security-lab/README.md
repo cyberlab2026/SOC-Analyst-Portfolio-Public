@@ -64,6 +64,15 @@ The result does not establish that Sophos will detect every real malware sample,
 
 The assessment is limited to the observed EICAR test result and the configuration information visible in Sophos Central.
 
+### Additional Detection Entries
+
+The Sophos screenshots also display entries labelled `Mal/Generic-S` and `CXWeb/Generic-X`.
+
+These entries were visible during the review but were not investigated as part of the EICAR validation exercise. Their causes and relationship to the EICAR test were not established.
+
+The EICAR conclusion is based only on the entries identified as EICAR test detections.
+
+
 ## Result and Limitations
 
 - **Verified:** The Windows VM showed Good health, Online connection status, and XDR agent mode. The selected Threat Protection settings were displayed as On. Sophos reported detection followed by cleanup of the EICAR test file.
