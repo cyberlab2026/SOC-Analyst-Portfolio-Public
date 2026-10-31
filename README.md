@@ -51,6 +51,3 @@ Never publish real client data, credentials, private console details, or unappro
 - Strengthen endpoint-security and network-troubleshooting fundamentals.
 - Progress toward understanding SIEM workflows and SOC alert triage.
 
-## Contact
-
-A professional contact method will be added when I am ready to make it public.
