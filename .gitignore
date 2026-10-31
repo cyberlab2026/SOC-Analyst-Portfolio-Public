@@ -1,0 +1,23 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+credentials.json
+secrets.*
+
+# Local and potentially sensitive exports
+*.evtx
+*.pcap
+*.pcapng
+*.eml
+*.pfx
+*.p12
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
