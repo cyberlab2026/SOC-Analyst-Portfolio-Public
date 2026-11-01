@@ -1,187 +1,394 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cybersecurity portfolio showcasing four defensive security labs and SOC Analyst learning projects.">
-  <title>SOC Analyst Portfolio</title>
+  <meta name="description" content="Lavanya Patil's SOC Analyst portfolio featuring four defensive cybersecurity projects.">
+  <title>Lavanya Patil | SOC Analyst Portfolio</title>
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background: #080f1e;
-      color: #e5edf8;
+      color: #e5e7eb;
       line-height: 1.7;
     }
-    a { color: inherit; text-decoration: none; }
-    .container { width: min(1080px, 90%); margin: auto; }
-    header {
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(8,15,30,.94);
-      border-bottom: 1px solid #1e304a;
-      backdrop-filter: blur(12px);
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: #0d1729;
+      border-bottom: 1px solid #1e293b;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
     nav {
-      min-height: 70px; display: flex;
-      justify-content: space-between; align-items: center;
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       gap: 20px;
     }
-    .logo { font-size: 19px; font-weight: bold; color: #60a5fa; }
-    nav ul { display: flex; gap: 24px; list-style: none; }
-    nav a:hover { color: #60a5fa; }
-    .hero { padding: 105px 0 95px; }
-    .eyebrow { color: #60a5fa; font-weight: bold; letter-spacing: 2px; }
-    h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.15; margin: 18px 0; }
-    h1 span { color: #60a5fa; }
-    .hero p { color: #aab9ce; max-width: 650px; font-size: 18px; }
-    .actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-    .btn {
-      padding: 12px 21px; border-radius: 7px;
-      border: 1px solid #3b82f6; font-weight: bold;
+
+    .logo {
+      color: #60a5fa;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      padding: 110px 0 90px;
+      text-align: center;
+    }
+
+    .tag {
       display: inline-block;
+      color: #93c5fd;
+      background: #172b49;
+      border: 1px solid #29476c;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 22px;
     }
-    .primary { background: #2563eb; }
-    .btn:hover { background: #1d4ed8; }
-    section { padding: 65px 0; }
-    .section-title { font-size: 30px; margin-bottom: 10px; }
-    .section-desc { color: #94a8c2; margin-bottom: 30px; }
-    .grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
-    .card {
-      background: #101d32; border: 1px solid #203653;
-      border-radius: 12px; padding: 25px;
-      transition: transform .2s, border-color .2s;
+
+    h1 {
+      font-size: clamp(36px, 7vw, 60px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+      color: #f8fafc;
     }
-    .card:hover { transform: translateY(-4px); border-color: #3b82f6; }
-    .number { color: #60a5fa; font-size: 14px; font-weight: bold; }
-    h3 { margin: 10px 0; font-size: 20px; }
-    .card p, .about p { color: #aab9ce; }
-    .project-link { display: inline-block; margin-top: 18px; color: #60a5fa; font-weight: bold; }
-    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
-    .skill {
-      background: #142641; border: 1px solid #294365;
-      color: #c8dcf7; padding: 9px 15px; border-radius: 20px;
+
+    h1 span {
+      color: #60a5fa;
     }
-    .about {
-      background: #101d32; border: 1px solid #203653;
-      border-radius: 12px; padding: 28px;
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #a8b4c7;
+      font-size: 17px;
     }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 24px;
+      border-radius: 7px;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      font-size: 30px;
+      color: #f8fafc;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      color: #94a3b8;
+      margin-bottom: 32px;
+    }
+
+    .about-card,
+    .project-card,
+    .skill-card {
+      background: #101c30;
+      border: 1px solid #24344c;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .about-card p {
+      color: #bdc8d8;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-number {
+      color: #60a5fa;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .project-card h3 {
+      color: #f8fafc;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .project-card p {
+      color: #a8b4c7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .project-link {
+      color: #60a5fa;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      color: #bfdbfe;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .skill-card {
+      text-align: center;
+      color: #cbd5e1;
+    }
+
+    .contact-card {
+      background: #101c30;
+      border: 1px solid #24344c;
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    .contact-card p {
+      color: #a8b4c7;
+      margin-bottom: 12px;
+    }
+
     footer {
-      border-top: 1px solid #203653; padding: 28px 0;
-      color: #91a4bd; text-align: center; font-size: 14px;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #1e293b;
+      color: #8290a5;
+      font-size: 14px;
     }
-    @media(max-width: 650px) {
-      nav { align-items: flex-start; padding: 17px 0; flex-direction: column; }
-      nav ul { gap: 15px; flex-wrap: wrap; font-size: 14px; }
-      .hero { padding: 75px 0; }
-      .grid { grid-template-columns: 1fr; }
-      section { padding: 45px 0; }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 15px 0;
+        flex-direction: column;
+      }
+
+      nav ul {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .project-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <div class="container">
       <nav>
-        <a class="logo" href="#">SOC Analyst Portfolio</a>
+        <a class="logo" href="#home">LP | Cybersecurity</a>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero container" id="home">
-      <div class="eyebrow">CYBERSECURITY PORTFOLIO</div>
-      <h1>Learning. Investigating.<br><span>Defending.</span></h1>
-      <p>
-        Welcome to my cybersecurity portfolio. I am building practical
-        defensive-security skills through hands-on labs, technical
-        investigation, and evidence-based documentation.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">Explore Projects</a>
-        <a class="btn" href="https://github.com/cyberlab2026/SOC-Analyst-Portfolio-Public" target="_blank" rel="noopener noreferrer">View GitHub</a>
-      </div>
-    </section>
-
-    <section class="container" id="projects">
-      <h2 class="section-title">My Projects</h2>
-      <p class="section-desc">Four completed defensive-security learning projects.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="number">PROJECT 01</div>
-          <h3>Windows Event Log Investigation</h3>
-          <p>Reviewed Windows authentication events and interpreted Security Event ID 4624 and logon type 5.</p>
-          <a class="project-link" href="01-windows-event-log-investigation/README.md">View Project →</a>
-        </article>
-        <article class="card">
-          <div class="number">PROJECT 02</div>
-          <h3>Endpoint Security Policy Lab</h3>
-          <p>Explored Sophos endpoint policies and documented EICAR detection and cleanup.</p>
-          <a class="project-link" href="02-endpoint-security-policy-lab/README.md">View Project →</a>
-        </article>
-        <article class="card">
-          <div class="number">PROJECT 03</div>
-          <h3>Basic Network Triage</h3>
-          <p>Practised network configuration checks, gateway reachability, DNS resolution, and TCP connectivity.</p>
-          <a class="project-link" href="03-network-triage-lab/README.md">View Project →</a>
-        </article>
-        <article class="card">
-          <div class="number">PROJECT 04</div>
-          <h3>Linux Authentication Log Review</h3>
-          <p>Reviewed GDM authentication failures and session activity while distinguishing evidence from assumptions.</p>
-          <a class="project-link" href="04-linux-auth-log-review/README.md">View Project →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="container" id="skills">
-      <h2 class="section-title">Technical Skills</h2>
-      <p class="section-desc">Concepts and tools practised through learning and lab exercises.</p>
-      <div class="skills">
-        <span class="skill">Cybersecurity Fundamentals</span>
-        <span class="skill">TCP/IP</span>
-        <span class="skill">DNS & DHCP</span>
-        <span class="skill">Windows Event Logs</span>
-        <span class="skill">Linux Authentication Logs</span>
-        <span class="skill">Windows Server</span>
-        <span class="skill">Active Directory</span>
-        <span class="skill">Group Policy</span>
-        <span class="skill">Sophos Endpoint Security</span>
-        <span class="skill">Network Troubleshooting</span>
-        <span class="skill">Security Documentation</span>
-      </div>
-    </section>
-
-    <section class="container" id="about">
-      <h2 class="section-title">About This Portfolio</h2>
-      <div class="about">
+    <section class="hero" id="home">
+      <div class="container">
+        <span class="tag">Cybersecurity | Defensive Security</span>
+        <h1>Hi, I'm <span>Lavanya Patil</span></h1>
+        <h2>SOC Analyst Portfolio</h2>
         <p>
-          This portfolio documents my cybersecurity learning through
-          self-directed defensive-security labs. My focus is on collecting
-          relevant evidence, examining technical events, and documenting
-          conclusions accurately.
+          Aspiring SOC Analyst focused on defensive security,
+          endpoint protection, Windows event investigation,
+          network troubleshooting and Linux log analysis.
         </p>
-        <br>
-        <p>
-          These projects are learning exercises, not claims of production
-          SOC experience. My findings are limited to the evidence observed
-          in each lab.
+        <a class="button" href="#projects">Explore My Projects</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-intro">My cybersecurity learning journey</p>
+        <div class="about-card">
+          <p>
+            I am a cybersecurity learner building practical skills
+            in Security Operations Center (SOC) fundamentals.
+            My learning focuses on investigating security events,
+            understanding endpoint protection, performing basic
+            network triage and reviewing authentication logs.
+            I enjoy hands-on labs and documenting findings based
+            on available evidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Cybersecurity Projects</h2>
+        <p class="section-intro">
+          Four defensive security labs and practical investigations.
         </p>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 01</span>
+            <h3>Windows Event Log Investigation</h3>
+            <p>
+              Investigating Windows Security Event ID 4624
+              and understanding successful logon activity
+              using logon type and event details.
+            </p>
+            <a class="project-link"
+               href="01-windows-event-log-investigation/README.md">
+              View Project →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 02</span>
+            <h3>Endpoint Security Policy Lab</h3>
+            <p>
+              Exploring Sophos endpoint security policies,
+              EICAR test detection and safe malware-test
+              file cleanup.
+            </p>
+            <a class="project-link"
+               href="02-endpoint-security-policy-lab/README.md">
+              View Project →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 03</span>
+            <h3>Basic Network Triage</h3>
+            <p>
+              Performing basic network troubleshooting with
+              IP configuration, gateway connectivity,
+              DNS lookup and TCP port testing.
+            </p>
+            <a class="project-link"
+               href="03-network-triage-lab/README.md">
+              View Project →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 04</span>
+            <h3>Linux Authentication Log Review</h3>
+            <p>
+              Reviewing Linux authentication logs,
+              identifying recorded login failures and
+              session activity using available evidence.
+            </p>
+            <a class="project-link"
+               href="04-linux-auth-log-review/README.md">
+              View Project →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-intro">Tools and technologies explored</p>
+
+        <div class="skills-grid">
+          <div class="skill-card">SOC Fundamentals</div>
+          <div class="skill-card">Windows Event Logs</div>
+          <div class="skill-card">Sophos Endpoint Security</div>
+          <div class="skill-card">Network Troubleshooting</div>
+          <div class="skill-card">Linux Authentication Logs</div>
+          <div class="skill-card">TCP/IP and DNS</div>
+          <div class="skill-card">Windows Server 2022</div>
+          <div class="skill-card">Active Directory</div>
+          <div class="skill-card">Basic Security Analysis</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          Connect with me and explore my cybersecurity journey.
+        </p>
+        <div class="contact-card">
+          <p>GitHub: <a class="project-link"
+            href="https://github.com/cyberlab2026">
+            github.com/cyberlab2026</a></p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      SOC Analyst Portfolio · Four defensive-security projects ·
-      <a href="https://github.com/cyberlab2026/SOC-Analyst-Portfolio-Public" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+    © 2026 Lavanya Patil | SOC Analyst Portfolio
   </footer>
+
 </body>
 </html>
