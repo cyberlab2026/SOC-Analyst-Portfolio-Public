@@ -1,4 +1,4 @@
-# Project 02 — Endpoint Security Lab
+# Project 02 — Endpoint Security Policy Lab
 
 **Status:** Completed — Sophos EICAR detection and cleanup documented
 
@@ -6,7 +6,7 @@
 
 ## Objective
 
-Document how an endpoint-security is scoped, what behaviour it is intended to control, and whether a safe test produces the expected result. Distinguish configuration observations from verified prevention or detection.
+Document how an endpoint-security policy is scoped, what behaviour it is intended to control, and whether a safe test produces the expected result. Distinguish configuration observations from verified prevention or detection.
 
 ## Lab Details
 
